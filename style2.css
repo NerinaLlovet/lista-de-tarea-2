@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+:root {
+--blanco: rgb(0, 0, 0);
+--lila: rgb(87, 151, 62);
+--celeste: rgb(154, 192, 41);
+--azul: rgb(115, 6, 82);
+--verde: rgb(161, 71, 105);
+
+--fuente:  "Gloria Hallelujah", cursive;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: linear-gradient(to bottom,var(--lila),var(--verde));
+  height: 100vh;
+  font-family: var(--fuente);
+}
+
+.contenedor{
+  height: 600px;
+  width: 400px;
+  max-width: 80%;
+  margin: 15% auto;
+}
+
+.perfil{
+  color: var(--blanco);
+}
+
+.fecha{
+  margin-bottom: 10px;
+}
+
+.leyenda{
+  letter-spacing: 2px;
+}
+
+.agregar-tarea{
+  background-color: var(--blanco);
+  height: 70px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  padding: 10px;
+  margin: 40px 0;
+}
+
+.agregar-tarea input{
+  background-color: var(--blanco);
+  border: none;
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  color: var(--lila);
+  padding: 10px;
+}
+
+.mas-agregar-tarea{
+  font-size: 50px;
+  color: var(--lila);
+}
+
+.mas-agregar-tarea:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.input-agregar-tarea::placeholder{
+  font-size: 16px;
+  color: var(--lila);
+  padding: 10px;
+}
+
+h3{
+  color: var(--blanco);
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.item{
+  background: linear-gradient(to bottom,var(--azul),var(--verde));
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.check, .borrar{
+  font-size: 25px;
+  color: var(--blanco);
+}
+
+.check:hover, .borrar:hover{
+  color: var(--celeste);
+  cursor: pointer;
+}
+
+.texto{
+  font-size: 18px;
+  color: var(--blanco);
+}
+
+.tachado{
+  text-decoration: line-through;
+  color: var(--celeste);
+}
+
+/* BOTÓN CAMBIO DE ESTILOS */
+
+.estilo {
+    font-size: 50px;
+    cursor: pointer;  
+    position: absolute;
+    right: 10%; 
+    top: 5%;
+    transition: transform 0.3s ease-in-out; 
+    color: var(--blanco);
+}
+
+.estilo:hover {
+    transform: scale(1.2); 
+    color: var(--verde);
+}

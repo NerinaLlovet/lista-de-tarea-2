@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+  <link rel="stylesheet" href="style2.css" id="estilos">
+  <!-- <link rel="stylesheet" href="style2.css"> -->
+  <title>Document</title>
+</head>
+<body>
+  <div class="contenedor">
+    <div class="perfil">
+      <!-- BOTÓN CAMBIO DE ESTILOS -->
+      <i class="fa-regular fa-face-grin-wink estilo" onclick="cambiarEstilos()"></i>
+      <!-- FIN BOTÓN CAMBIO DE ESTILOS -->
+      <div id="fecha" class="fecha">algo de Marzo</div>
+      <h1>Hola Neri</h1>
+      <span class="leyenda">vamos a cumplir tus metas</span>
+    </div>
+    <div class="agregar-tarea">
+      <input type="text" placeholder="agregar una tarea" id="input-agregar-tarea" class="input-agregar-tarea">
+      <i class="fas fa-plus-circle mas-agregar-tarea" id="mas-agregar-tarea"></i>
+
+    </div>
+    <div class="lista-de-tareas">
+      <h3>Estas son tus tareas pendientes:</h3>
+      <ul id="lista">
+        <li class="item" id="item">
+          <i class="fas fa-circle co check" id="check" data-="check"></i> 
+          <p class="texto">Regar plantas</p>
+          <i class="fas fa-trash de borrar" id="borrar" data-="borrar"></i> 
+        </li>
+
+      </ul>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
