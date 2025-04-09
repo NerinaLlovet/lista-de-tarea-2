@@ -115,7 +115,7 @@ h3{
 }
 
 /* BOTÓN CAMBIO DE ESTILOS */
-
+/* 
 .estilo {
     font-size: 50px;
     cursor: pointer;  
@@ -129,4 +129,4 @@ h3{
 .estilo:hover {
     transform: scale(1.2); 
     color: var(--verde);
-}
+} */

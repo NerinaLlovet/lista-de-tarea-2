@@ -24,3 +24,21 @@ if(tarea) {
 input.value = "";
 
 })
+document.addEventListener("keyup", (e) => {
+  if(e.key == 'Enter') {
+
+
+const tarea = input.value 
+if(tarea) {
+    agregarTarea(tarea)
+}
+input.value = "";
+  }
+})
+
+const cambiarEstilos = () => {
+  const link =document.getElementById("estilos");
+
+  link.href = link.href.includes("style.css") ? "style2.css" : "style.css" ;
+} ;
+
